@@ -1,0 +1,42 @@
+body {
+	color: red;
+}
+
+widget,ul {
+
+	float: left;
+	width: 45%;
+}
+
+widget {
+
+	background: orange;
+	height: 200px;
+}
+
+section {
+	background: #FF9900;
+	
+	}
+
+ul {
+
+	list-style: none;
+
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+

@@ -1,32 +1,202 @@
-/*body {
-
-	color:red;
-}*/
-
-widget,ul{
-
-	float:left;
-	width:45%;
+body{
+	background-color:#F2F2F2;
 }
 
-widget{
+h1{
+	text-align:center;
+}
 
-	background: orange;
-	height: 200px;
+hr{
+	margin-top:25px;
+}
+
+p{
+	margin-bottom:1.5px;
+	margin-top:1.5px;
+	padding-bottom:1.5px;
+	padding-top:1.5px;
 }
 
 section{
-
-	background: #FF9900;
+	top:15px;
 }
 
-ul
-{
+sup{
+	color:brown;
+	position:relative;
+	top:3px;
+}
+
+table{
+	width:100%;
+}
+
+ul{
 	list-style:none;
 }
 
+a:link   
+{   
+ text-decoration:none;   
+}   
+
+li:nth-child(1){
+	color:brown;
+	font-size:40px;
+	font-weight:bold;
+	position:relative;
+	top:-20px;
+}
+
+.col{
+	background-color:#F2F2F2;
+	float:left;
+	height:70%;
+	margin-bottom: 20px;
+	margin-left: 3%;
+	margin-right: 0%;
+	position:relative;
+	width:40%;
+}
+
+.clear{
+	clear:both;
+}
+
+.flotadas{
+	float:left;
+}
+
+.logos{
+	height:30px;
+	width:45px;
+}
+
+.logosmall{
+	height:20px;
+	position:relative;
+	top:4px;
+	width:25px;
+}
+
+.td1{
+    border-right: 1px dotted grey;
+}
+
+.td2{
+    padding-left:10px;
+}
+
+.spred{
+	color:brown;
+}
+
+.spgreen{
+	color:green;
+	
+}
+
+.spblue{
+	color:blue;
+}
+
+.spgrey{
+	color:grey;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.imagenes{
+	height:35px;
+	left:10%;
+	padding:4px;
+	padding-top:10px;
+	position:relative;
+	width:40px;
+}
+
+.listaimagenes{
+	cursor:pointer;
+	float:left;
+	height:200px;
+	margin-left: 3%;
+	margin-bottom: 20px;
+	position:relative;
+	width:50px;
+}
+
+.subtitulo{
+	border:none;
+	border-top:1px dotted grey;
+	float:left;
+	position:relative;
+	top:-15px;
+	width:10%;
+}
+
+.contenedor{
+	left:23%;
+	position:relative;
+	top:-15px;
+}
+
+.spsub{
+	left:-5px;
+	position:relative;
+	text-align:center;
+	top:-5px;
+	width:25%;
+}
+
+#col1{
+	height:500px;
+	background-color:white;
+	margin-left:1%;
+}
+
+#col2{
+	margin-left:0.5px;
+}
+
+#i1{
+	height:35%;
+	left:20%;
+	position:absolute;
+	top:30%;
+	width:60%;
+}
+
+#mpg{
+	height:25px;
+	position:relative;
+	top:12px;
+	width:75px;
+}
+
+#visa{
+	position:relative;
+	top:4px;
+}
+
+#banco{
+	position:relative;
+	top:11px;
+}
+
+#pimage{
+	margin-top:0;
+	padding-top:0;
+	position:relative;
+}
+
+#listaimg1{
+	border:1px solid black;
+}
 
 
+/* ClearFix: */
 
 .clearfix:before,
 .clearfix:after {
@@ -38,10 +208,6 @@ ul
     clear: both;
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .clearfix {
     *zoom: 1;
 }

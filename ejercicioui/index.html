@@ -2,40 +2,77 @@
 	<head>
 		<title>Test Práctico UI</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="chico-master/dist/ui/chico2.css" />
+		<link rel="stylesheet" href="modal/src/main/resources/css/jquery.toastmessage.css" />
 	</head>
 	<body>
 		<main>
 			<h1>Smart TV Led HD Ken Brown 32 Kb-32-2260 Wi-fi,2 Hdmi</h1>
 			
-			<section class="clearfix">
-			<widget></widget>
-			
-			<ul>	
-				<li>$4.799°°</li>
-				<li>
-					<p><span>6 cuotas de $ 799</span> Sin interes con mercado pago</p>
-					<p>Pagando con VISA Banco Hipotecario</p>
-					<a href="#" target="_blank">Modificar</a>
-				</li>
-				<li>
-					<p>Envio gratis a todo el país por <b>MercadoEnvíos</b></p>
-					<p>Conoce los tiempos y las formas de envío</p>
-					<a href="#" target="_blank">Calcular cuándo llega</a>
-					<br><br>
-				</li>
-				<li>
-					<!--input type="submit" value="Comprar"></input-->
-					<a href="#" target="_blank">Comprar</a>
-				</li>
-				<li>
-					<p>Compra Protegida con MercadoPago</p>
-					<p>Recibe el producto que esperabas o te devolvemos tu dinero</p>
-				</li>
-			</ul>
-			
-			</section>
+			<div class="contenedor">
+				<hr class="subtitulo">
+				<span class="spgrey flotadas spsub"><img src="images/articulo2.png" class="logosmall"></img>Articulo Nuevo &nbsp&nbsp&nbsp <img src="images/carrito2.png" class="logosmall"></img><span id="vendidos"> 31 </span> Vendidos</span>
+				<hr class="subtitulo">
+				<br class="clear">
+			</div>
 		
+			<section class="clearfix">
+				<div class="listaimagenes">
+					<img src="images/televisor.png" class="imagenes" id="listaimg1"></img>
+					<img src="images/televisor2.png" class="imagenes" id="listaimg2"></img>
+					<img src="images/televisor3.png" class="imagenes" id="listaimg3"></img>
+				</div>
+				<widget class="col" id="col1">
+					<img id="i1" src="images/televisor.png"></img>
+				</widget>
+				<div class="col" id="col2">
+					<ul>	
+						<li id="precio">$4.799°°</li>
+						<li>
+							<table>
+							  <tr>
+								<td class="td1"><img src="images/tarjeta2.png" class="logos"></img></td>
+								<td class="td2">
+									<p><span class="spred bold" id="cuotas">6 cuotas de $ 799</span><sup>83</sup><span class="spgreen"> Sin interés con </span><img id="mpg" src="images/mpago.png"></img></p>
+									<p id="pimage"><span class="spgrey bold">Pagando con</span> <img src="images/visa.png" id="visa"></img> <img src="images/banco.png" id="banco"></img></p>
+									<a href="#" target="_blank"><span class="spblue">Modificar</span></a>
+								</td>
+							  </tr>
+							</table>
+							<br>
+						</li>
+						<li>
+							<table>
+							  <tr>
+								<td class="td1"><img src="images/camion.jpg" class="logos"></img></td>
+								<td class="td2">
+									<p><span class="spgreen bold">Envío gratis a todo el país</span> por <b>MercadoEnvíos</b></p>
+									<p><span class="spgrey">Conoce los tiempos y las formas de envío</span></p>
+									<a href="#" target="_blank"><span class="spblue">Calcular cuándo llega</span></a>
+								</td>
+							  </tr>
+							</table>
+							<br>
+						</li>
+						<li>
+							<!--input type="submit" value="Comprar"></input-->
+							<button class="ch-btn" id="btncomprar">Comprar</button>
+						</li>
+						<hr>
+						<li>
+							<img src="images/protegida.png" class="flotadas"></img>
+							<div class="flotadas">
+								<p><span class="spblue">Compra Protegida</span> con MercadoPago</p>
+								<p>Recibe el producto que esperabas o te devolvemos tu dinero</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
 		</main>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="chico-master/dist/ui/chico.min.js"></script>
+		<script src="modal/src/main/javascript/jquery.toastmessage.js"></script>
 		<script src="js/scripts.js" type="text/javascript"></script>
 	</body>
 </html>

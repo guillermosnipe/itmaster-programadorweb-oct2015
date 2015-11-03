@@ -1,0 +1,75 @@
+// > Mixins
+// ----------------------------------------------------------------
+
+// >> Hide text
+// ------------------------------------------------------
+
+@mixin hide-text {
+    visibility: hidden;
+    position: absolute !important;
+    top: -9999px !important;
+}
+
+// >> Opacity
+// ------------------------------------------------------
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    filter: unquote("alpha(opacity=#{$opacity * 100})");
+}
+
+// >> No-select
+// ------------------------------------------------------
+
+@mixin no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+// >> Ellipsis
+// ------------------------------------------------------
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// >> Box sizing
+// ------------------------------------------------------
+
+// The box-sizing mixin is deprecated by Bourbon library  and will be removed in
+// the next major version release. We are still going to support older browsers
+// so to prevent Bourbon warnings the mixing is overriding here but without the
+// warn.
+@mixin box-sizing($box) {
+    @include prefixer(box-sizing, $box, webkit moz spec);
+}
+
+// >> Complex background
+// ------------------------------------------------------
+
+// Receives the list of colors, at leas one is required.
+// When passes the single color or the second one is null gradient in not drawing
+@mixin complex-background($colors...) {
+    $primary-color: nth($colors, 1);
+    $secondary-color: null;
+
+    @if type-of($primary-color) == color {
+        background-color: $primary-color;
+    }
+
+    @if length($colors) == 2 {
+        $secondary-color: nth($colors, 2);
+        @if $secondary-color and $primary-color != $secondary-color{
+            @include background-image(linear-gradient($primary-color, $secondary-color));
+        }
+    } @else if length($colors) > 2 {
+        @include background-image(linear-gradient($colors));
+    }
+}

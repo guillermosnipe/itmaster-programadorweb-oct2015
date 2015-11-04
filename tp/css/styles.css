@@ -1,11 +1,32 @@
+* {
+	background-color: #C0C0C0;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+h1,h2 {
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2{
+	color: #708090;
+	font-size: 15px;
+}
+
 widget, ul {
 	float:left;
 	width:45%;
 }
 
 widget {
-	background: orange;
-	height: 200px;
+	background: white;
+	height: 600px;
 }
 
 .clearfix:before,
@@ -22,10 +43,67 @@ widget {
     *zoom: 1;
 }
 
-section {
-	background: #ff9900;
-}
-
 ul {
 	list-style: none;
+	margin-top: 0;
+	padding-top: 0;
+	border-top: 0;
 }
+
+li {
+	padding: 5px;
+	margin: 5px;
+}
+
+.red {
+	color:#8B0000;
+	font-size: 20px;
+}
+
+.precio {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.tam {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.green {
+	color: #008000;
+}
+
+.blue {
+	color: #0000CD;
+}
+
+.grey {
+	color: #708090;
+}
+
+a {
+	text-decoration: none;
+}
+
+#comprar {
+	text-decoration: center;
+	font-size: 30px;
+	background-color:#0000CD;
+	color: white;
+	border-radius: 5px solid;
+	padding: 10px;
+	margin-left: 100px; 
+}
+
+.margen {
+	margin-left: 50px;
+	line-height: 50%;
+}
+
+.resaltado {
+	color:#000000;
+	font-size: 20px;
+}
+
+
